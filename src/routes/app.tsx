@@ -56,7 +56,7 @@ function AppLayout() {
         <div className="flex h-16 items-center justify-between border-b border-sidebar-border px-5">
           <Link to="/app/dashboard" className="flex items-center gap-2">
             <div className="flex h-8 w-8 items-center justify-center rounded-md bg-sidebar-primary text-sidebar-primary-foreground font-bold">R</div>
-            <span className="font-bold">RentEase NG</span>
+            <span className="font-bold">PayPadi</span>
           </Link>
           <button className="lg:hidden" onClick={() => setOpen(false)}><X className="h-5 w-5" /></button>
         </div>
