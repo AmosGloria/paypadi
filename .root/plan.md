@@ -3,7 +3,7 @@
 A modern, mobile-responsive SaaS for Nigerian landlords, agents, property managers, and tenants to track properties, tenants, rent, receipts, maintenance, and lease renewals.
 
 ### Brand & Design System
-- **Name:** RentEase NG
+- **Name:** PayPadi
 - **Primary:** Deep purple `#1F0954`
 - **Accents:** white, light gray, soft green (paid), amber (pending), red (overdue)
 - **Typography:** Clean sans-serif (Inter), generous spacing, rounded cards, subtle shadows
