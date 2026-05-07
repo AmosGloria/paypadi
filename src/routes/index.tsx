@@ -25,7 +25,7 @@ import { useState } from "react";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "RentEase NG — Rent Collection & Property Management for Nigeria" },
+      { title: "PayPadi — Rent Collection & Property Management for Nigeria" },
       {
         name: "description",
         content:
@@ -80,7 +80,7 @@ const PLANS = [
 ];
 
 const FAQS = [
-  { q: "Is RentEase NG built specifically for Nigeria?", a: "Yes. We support Naira, annual rent cycles, caution fees, service charges, agent commissions and reminder workflows that match how property is managed in Nigeria." },
+  { q: "Is PayPadi built specifically for Nigeria?", a: "Yes. We support Naira, annual rent cycles, caution fees, service charges, agent commissions and reminder workflows that match how property is managed in Nigeria." },
   { q: "Can my tenants pay through the app?", a: "We are integrating with Paystack and Flutterwave. Today you can record bank transfers, POS, card and cash payments, then issue digital receipts." },
   { q: "Do tenants need to download anything?", a: "No. Tenants can view their rent and submit complaints directly from any browser on their phone." },
   { q: "Is my data secure?", a: "Yes. Each user only sees what their role allows. Landlords see their own properties; agents see what's assigned to them; tenants see their own records." },
@@ -93,8 +93,8 @@ function Landing() {
       <header className="sticky top-0 z-40 border-b bg-background/80 backdrop-blur">
         <div className="container mx-auto flex h-16 max-w-6xl items-center justify-between px-4">
           <Link to="/" className="flex items-center gap-2">
-            <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-primary text-primary-foreground font-bold">R</div>
-            <span className="text-lg font-bold tracking-tight">RentEase <span className="text-primary-glow">NG</span></span>
+            <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-primary text-primary-foreground font-bold">P</div>
+            <span className="text-lg font-bold tracking-tight">Pay<span className="text-primary-glow">Padi </span></span>
           </Link>
           <nav className="hidden items-center gap-8 text-sm font-medium md:flex">
             <a href="#features" className="text-muted-foreground hover:text-foreground">Features</a>
@@ -122,29 +122,35 @@ function Landing() {
         )}
       </header>
 
-      <section className="relative overflow-hidden">
-        <div className="absolute inset-0 -z-10 bg-gradient-to-br from-primary via-primary to-primary-glow opacity-95" />
-        <div className="absolute inset-0 -z-10 opacity-30" style={{ background: "radial-gradient(60% 60% at 80% 0%, white 0%, transparent 60%)" }} />
-        <div className="container mx-auto max-w-6xl px-4 py-20 text-primary-foreground md:py-28">
-          <div className="max-w-3xl">
-            <span className="inline-flex items-center gap-2 rounded-full bg-white/10 px-3 py-1 text-xs font-medium backdrop-blur">
+      <section className="relative overflow-hidden mx-6 lg:mx-24 rounded-2xl">
+        <img
+          src="/Images/family.jpg"
+          alt="family"
+          className="absolute inset-0 h-full w-full object-cover object-center"
+        />
+        <div className="absolute inset-0 bg-gradient-to-br from-primary/40 via-primary/50 to-primary-glow/20" />
+        <div className="absolute inset-0 opacity-20" style={{ background: "radial-gradient(60% 60% at 80% 0%, white 0%, transparent 60%)" }} />
+        <div className="relative z-10 container mx-auto max-w-6xl px-4 py-20 text-primary-foreground md:py-28">
+          <div className="max-w-3xl lg:px-10 px-4">
+            <span className="inline-flex items-center drop-shadow-2xl gap-2 rounded-full bg-white/10 px-3 py-1 text-xs font-medium backdrop-blur">
               <ShieldCheck className="h-3.5 w-3.5" /> Trusted by Nigerian landlords & agents
             </span>
-            <h1 className="mt-6 text-4xl font-extrabold text-gray-700 leading-tight md:text-6xl">
-              Collect rent. Manage properties. <span className="text-primary-glow">Sleep well.</span>
+            <h1 className=" mt-6 md:text-4xl text-3xl drop-shadow-2xl font-extrabold leading-tight md:text-6xl">
+              Collect rent. Manage properties. 
+              <span className="text-primary-glow drop-shadow-lg">Sleep well.</span>
             </h1>
-            <p className="mt-5 text-lg text-white/85 md:text-xl">
-              RentEase NG is the simplest way for Nigerian landlords, agents and property managers
-              to track tenants, rent, receipts and maintenance — all from one clean dashboard.
+            <p className="mt-5 text-sm text-white/85 md:text-xl drop-shadow-lg font-semibold">
+              PayPadi is the simplest way for Nigerian landlords, agents and property managers
+              to track tenants, rent, receipts and maintenance.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <Link to="/signup"><Button size="lg" variant="secondary" className="font-semibold">Get Started Free</Button></Link>
               <Link to="/login"><Button size="lg" variant="outline" className="border-white/40 bg-white/10 text-white hover:bg-white/20 hover:text-white">View Demo</Button></Link>
             </div>
             <div className="mt-10 flex flex-wrap items-center gap-x-8 gap-y-3 text-sm text-white/80">
-              <div className="flex items-center gap-2"><CheckCircle2 className="h-4 w-4" /> Naira-first</div>
-              <div className="flex items-center gap-2"><CheckCircle2 className="h-4 w-4" /> No card required</div>
-              <div className="flex items-center gap-2"><CheckCircle2 className="h-4 w-4" /> Mobile friendly</div>
+              <div className="flex items-center gap-2 drop-shadow-lg"><CheckCircle2 className="h-4 w-4" /> Naira-first</div>
+              <div className="flex items-center gap-2 drop-shadow-lg"><CheckCircle2 className="h-4 w-4" /> No card required</div>
+              <div className="flex items-center gap-2 drop-shadow-lg"><CheckCircle2 className="h-4 w-4" /> Mobile friendly</div>
             </div>
           </div>
         </div>
@@ -181,7 +187,7 @@ function Landing() {
                 Rent management that works the Nigerian way
               </h2>
               <p className="mt-4 text-muted-foreground">
-                From annual rent to caution fees and agent commissions — RentEase NG fits how
+                From annual rent to caution fees and agent commissions — PayPadi fits how
                 property is actually managed across Lagos, Abuja, Port Harcourt and beyond.
               </p>
             </div>
