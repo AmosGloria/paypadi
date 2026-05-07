@@ -10,7 +10,7 @@ import { toast } from "sonner";
 import { Loader2 } from "lucide-react";
 
 export const Route = createFileRoute("/signup")({
-  head: () => ({ meta: [{ title: "Sign up — RentEase NG" }] }),
+  head: () => ({ meta: [{ title: "Sign up — PayPadi" }] }),
   component: SignupPage,
 });
 
@@ -47,8 +47,8 @@ function SignupPage() {
     <div className="grid min-h-screen md:grid-cols-2">
       <div className="hidden flex-col justify-between bg-gradient-to-br from-primary to-primary-glow p-10 text-primary-foreground md:flex">
         <Link to="/" className="flex items-center gap-2">
-          <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-white/15 font-bold">R</div>
-          <span className="text-lg font-bold">RentEase NG</span>
+          <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-white/15 font-bold">P</div>
+          <span className="text-lg font-bold">PayPadi</span>
         </Link>
         <div>
           <h2 className="text-3xl font-bold">Manage rent the smart way</h2>
@@ -56,7 +56,7 @@ function SignupPage() {
             Join Nigerian landlords and agents who run their rentals with confidence.
           </p>
         </div>
-        <p className="text-xs text-white/60">© {new Date().getFullYear()} RentEase NG</p>
+        <p className="text-xs text-white/60">© {new Date().getFullYear()} PayPadi</p>
       </div>
       <div className="flex items-center justify-center p-6">
         <Card className="w-full max-w-md">
