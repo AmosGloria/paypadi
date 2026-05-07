@@ -9,7 +9,7 @@ import { toast } from "sonner";
 import { Loader2 } from "lucide-react";
 
 export const Route = createFileRoute("/login")({
-  head: () => ({ meta: [{ title: "Log in — RentEase NG" }] }),
+  head: () => ({ meta: [{ title: "Log in — PayPadi" }] }),
   component: LoginPage,
 });
 
@@ -37,7 +37,7 @@ function LoginPage() {
       <div className="hidden flex-col justify-between bg-gradient-to-br from-primary to-primary-glow p-10 text-primary-foreground md:flex">
         <Link to="/" className="flex items-center gap-2">
           <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-white/15 font-bold">R</div>
-          <span className="text-lg font-bold">RentEase NG</span>
+          <span className="text-lg font-bold">PayPadi</span>
         </Link>
         <div>
           <h2 className="text-3xl font-bold">Welcome back</h2>
