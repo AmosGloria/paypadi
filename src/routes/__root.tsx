@@ -30,13 +30,13 @@ export const Route = createRootRoute({
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "RentEase NG — Rent Collection & Property Management for Nigeria" },
+      { title: "PayPadi — Rent Collection & Property Management for Nigeria" },
       {
         name: "description",
         content:
-          "RentEase NG helps Nigerian landlords, agents and property managers track properties, tenants, rent payments, receipts and maintenance — all in one place.",
+          "PayPadihelps Nigerian landlords, agents and property managers track properties, tenants, rent payments, receipts and maintenance — all in one place.",
       },
-      { property: "og:title", content: "RentEase NG — Modern Rent Collection for Nigeria" },
+      { property: "og:title", content: "PayPadi— Modern Rent Collection for Nigeria" },
       {
         property: "og:description",
         content:
