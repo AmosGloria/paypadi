@@ -10,7 +10,7 @@ import { useAuth } from "@/lib/auth";
 import { toast } from "sonner";
 
 export const Route = createFileRoute("/app/settings")({
-  head: () => ({ meta: [{ title: "Settings — RentEase NG" }] }),
+  head: () => ({ meta: [{ title: "Settings — PayPadi" }] }),
   component: SettingsPage,
 });
 
