@@ -11,7 +11,7 @@ import { formatDate, daysUntil } from "@/lib/format";
 import { toast } from "sonner";
 
 export const Route = createFileRoute("/app/leases")({
-  head: () => ({ meta: [{ title: "Lease Reminders — RentEase NG" }] }),
+  head: () => ({ meta: [{ title: "Lease Reminders — PayPadi" }] }),
   component: LeasesPage,
 });
 
