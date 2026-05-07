@@ -15,7 +15,7 @@ import { formatDate } from "@/lib/format";
 import { toast } from "sonner";
 
 export const Route = createFileRoute("/app/maintenance")({
-  head: () => ({ meta: [{ title: "Maintenance — RentEase NG" }] }),
+  head: () => ({ meta: [{ title: "Maintenance — PayPadi" }] }),
   component: MaintenancePage,
 });
 
