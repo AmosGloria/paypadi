@@ -103,8 +103,8 @@ function Landing() {
             <a href="#faq" className="text-muted-foreground hover:text-foreground">FAQ</a>
           </nav>
           <div className="hidden items-center gap-2 md:flex">
-            <Link to="/login"><Button variant="ghost">Log in</Button></Link>
-            <Link to="/signup"><Button>Get Started</Button></Link>
+            <Link to="/login"><Button variant="ghost" className="cursor-pointer">Log in</Button></Link>
+            <Link to="/signup"><Button className="cursor-pointer">Get Started</Button></Link>
           </div>
           <button className="md:hidden" onClick={() => setOpen(!open)}><Menu /></button>
         </div>
@@ -115,8 +115,8 @@ function Landing() {
               <a href="#nigeria" onClick={() => setOpen(false)}>Why Nigeria</a>
               <a href="#pricing" onClick={() => setOpen(false)}>Pricing</a>
               <a href="#faq" onClick={() => setOpen(false)}>FAQ</a>
-              <Link to="/login"><Button variant="outline" className="w-full">Log in</Button></Link>
-              <Link to="/signup"><Button className="w-full">Get Started</Button></Link>
+              <Link to="/login"><Button variant="outline" className="w-full cursor-pointer">Log in</Button></Link>
+              <Link to="/signup"><Button className="w-full cursor-pointer">Get Started</Button></Link>
             </div>
           </div>
         )}
@@ -136,7 +136,7 @@ function Landing() {
               <ShieldCheck className="h-3.5 w-3.5" /> Trusted by Nigerian landlords & agents
             </span>
             <h1 className=" mt-6 md:text-4xl text-3xl drop-shadow-2xl font-extrabold leading-tight md:text-6xl">
-              Collect rent. Manage properties. 
+              Collect rent. Manage properties.
               <span className="text-primary-glow drop-shadow-lg">Sleep well.</span>
             </h1>
             <p className="mt-5 text-sm text-white/85 md:text-xl drop-shadow-lg font-semibold">

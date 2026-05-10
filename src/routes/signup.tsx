@@ -10,7 +10,7 @@ import { toast } from "sonner";
 import { Loader2 } from "lucide-react";
 
 export const Route = createFileRoute("/signup")({
-  head: () => ({ meta: [{ title: "Sign up — PayPadi" }] }),
+  head: () => ({ meta: [{ title: "PayPadi | Sign up" }] }),
   component: SignupPage,
 });
 
